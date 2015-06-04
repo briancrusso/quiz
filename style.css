@@ -14,14 +14,14 @@
 .main {
     padding: 0 0.938rem;
     margin: 0 auto;
-    min-width: 37.5rem;
+    /*min-width: 37.5rem;*/
     width: 100%;
-    height: 45.938rem;
+    height: 100%;
     overflow: auto;
-    background: blue url(images/couple.jpg);
+    background: white url(images/couple.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: absolute;
+    background-position: center;
 }
 
 /*--Here's everything in the Pink tab!--*/
@@ -42,7 +42,7 @@
     margin-right: auto;
 }
 
-.intro a {
+.box_content a {
     color: #FFD9D8;
     text-decoration: none;
 }
@@ -59,23 +59,7 @@
     background-color: #7FC9D1;
 }
 
-/*--How do I remove blue highlight when the button is pressed?
-.btn:active {
-    border: none;
-}
---*/
-
-.intro,
-.answer6,
-.answer5,
-.answer4,
-.answer3,
-.answer2,
-.answer1,
-.question4,
-.question3,
-.question2,
-.question1 {
+.box_content {
     padding: 1rem 1rem;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
@@ -83,16 +67,16 @@
     margin-right: auto;
 }
 
-.answer6,
-.answer5,
-.answer4,
-.answer3,
-.answer2,
-.answer1,
-.question4,
-.question3,
-.question2,
-.question1 {
+#not_a_sandwich,
+#several_sandwiches,
+#foot_long_hero,
+#egg_salad_bagel,
+#ham_cheese_croissant,
+#peanut_butter_jelly,
+#time_travel,
+#naked_math,
+#head_explode,
+#high_school_friend {
     display: none;
 }
 
@@ -121,6 +105,13 @@ h2 {
     text-align: center;
 }
 
+button:focus {
+    outline: 0;
+}
+
+button {
+    cursor: pointer;
+}
 @media only screen and (max-width: 700px) {
     .masthead {
         font-size: 1rem;
