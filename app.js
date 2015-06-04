@@ -20,23 +20,23 @@
              });
              /*logging values for the answers*/
              $('#avoid_eye_contact').click(function() {
-                 answer_log.push(0);
-                 console.log(answer_log);
-             });
-             $('#say_hello').click(function() {
-                 answer_log.push(0);
-                 console.log(answer_log);
-             });
-             $('#quit_your_job').click(function() {
                  answer_log.push(1);
                  console.log(answer_log);
              });
+             $('#say_hello').click(function() {
+                 answer_log.push(2);
+                 console.log(answer_log);
+             });
+             $('#quit_your_job').click(function() {
+                 answer_log.push(3);
+                 console.log(answer_log);
+             });
              $('#head_to_lab').click(function() {
-                 answer_log.push(0);
+                 answer_log.push(3);
                  console.log(answer_log);
              });
              $('#pray').click(function() {
-                 answer_log.push(0);
+                 answer_log.push(2);
                  console.log(answer_log);
              });
              $('#hedonism').click(function() {
@@ -44,11 +44,11 @@
                  console.log(answer_log);
              });
              $('#put_on_clothes').click(function() {
-                 answer_log.push(0);
+                 answer_log.push(2);
                  console.log(answer_log);
              });
              $('#ace_test').click(function() {
-                 answer_log.push(0);
+                 answer_log.push(3);
                  console.log(answer_log);
              });
              $('#grow_wings').click(function() {
@@ -56,15 +56,15 @@
                  console.log(answer_log);
              });
              $('#dating_advise').click(function() {
-                 answer_log.push(0);
+                 answer_log.push(1);
                  console.log(answer_log);
              });
              $('#regret_nothing').click(function() {
-                 answer_log.push(0);
+                 answer_log.push(3);
                  console.log(answer_log);
              });
              $('#investment').click(function() {
-                 answer_log.push(1);
+                 answer_log.push(2);
                  console.log(answer_log);
              });
              /*function to show the answer*/
@@ -76,23 +76,20 @@
                      answer_total += answer_log[i];
                  }
                  console.log(answer_total);
-                 if (answer_log[0] === 1 && answer_total === 1) {
+                 if (answer_total <= 5) {
                  	$('#peanut_butter_jelly').show();
                  }
-                 else if (answer_log[1] === 1 && answer_total === 1) {
+                 else if (answer_total >= 6 && answer_total <= 7) {
                  	$('#ham_cheese_croissant').show();
                  }
-                 else if (answer_log[2] === 1 && answer_total === 1) {
+                 else if (answer_total >= 8 && answer_total <= 9) {
                  	$('#egg_salad_bagel').show();
                  }
-                  else if (answer_log[3] === 1 && answer_total === 1) {
+                  else if (answer_total >= 10 && answer_total <= 11) {
                  	$('#foot_long_hero').show();
                  }
-                   else if (answer_total >= 2) {
-                 	$('#several_sandwiches').show();
-                 }
-                   else {
-                 	$('#not_a_sandwhich').show();
+                  else if (answer_total === 12) {
+                    $('#nietzsche_sandwich').show();
                  }
             });
 });

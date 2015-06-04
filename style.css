@@ -8,11 +8,13 @@
     text-shadow: 1px 1px #FF8A89;
     text-align: center;
     font-size: 2rem;
+    position: fixed;
+    width: 100%;
 }
 
 /*--Here's the Background Image!--*/
 .main {
-    padding: 0 0.938rem;
+    padding: 20rem 0.938rem;
     margin: 0 auto;
     /*min-width: 37.5rem;*/
     width: 100%;
@@ -30,9 +32,12 @@
     background-color: #FF8A89;
     width: 50%;
     min-height: 10px;
-    margin: 20rem auto;
+    margin: 15rem auto;
     border-radius: 2rem;
     border: .25rem solid #FF332F;
+    padding: -10rem 0;
+    position: relative;
+    top: -5rem;
 }
 
 /*--This is the sandwhich drawings--*/
@@ -67,8 +72,7 @@
     margin-right: auto;
 }
 
-#not_a_sandwich,
-#several_sandwiches,
+#nietzsche_sandwich,
 #foot_long_hero,
 #egg_salad_bagel,
 #ham_cheese_croissant,
@@ -115,6 +119,10 @@ button {
 @media only screen and (max-width: 700px) {
     .masthead {
         font-size: 1rem;
+    }
+    .content {
+        top: -20rem;
+        width: 75%;
     }
 }
 
