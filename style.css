@@ -119,10 +119,11 @@ button {
 @media only screen and (max-width: 700px) {
     .masthead {
         font-size: 1rem;
+        text-shadow: 0px 0px #FF8A89; 
     }
     .content {
         top: -20rem;
-        width: 75%;
+        width: 80%;
     }
 }
 
